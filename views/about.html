@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
+    <title>Lego Collection</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+    <nav>
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-xl">LEGO Collection</a>
+            </div>
+            <div class="flex-none">
+              <ul class="menu menu-horizontal px-1">
+                <li><a href="/">Home</a></li>
+                <li><a class="active" href="/about">About</a></li>
+                <li>
+                  <details>
+                    <summary>
+                      Theme
+                    </summary>
+                    <ul class="p-2 bg-base-100 rounded-t-none">
+                        <li><a href="/lego/sets?theme=technic">Technic</a></li>
+                        <li><a href="/lego/sets?theme=classic%20town">Classic Town</a></li>
+                        <li><a href="/lego/sets?theme=supplemental">Supplemental</a></li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <br/>
+
+    <!-- •	an element with class "container mx-auto"-->
+    <div class="container mx-auto">
+        <!-- o	A "hero" daisyUI component containing the header "About" with some additional text -->
+        <div class="hero h-dvh bg-base-200">
+            <div class="hero-content flex-col lg:flex-row">
+                <div>
+                    <h1 class="text-5xl font-bold">About me</h1>
+                    <p class="py-6">Basic Student Information about me</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- o	A responsive grid system containing 2 columns -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <!-- 	The left column should show an image that you like / represents you. -->
+            <div class="h-96 carousel carousel-vertical rounded-box">
+                <div class="carousel-item h-full">
+                  <img src="https://ih1.redbubble.net/image.5155618809.2672/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" />
+                </div> 
+                <div class="carousel-item h-full">
+                  <img src="https://www.boredpanda.com/blog/wp-content/uploads/2022/09/63343dbad7d31_ragdoll-cats.jpg" />
+                </div> 
+                <div class="carousel-item h-full">
+                  <img src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" />
+                </div> 
+                <div class="carousel-item h-full">
+                  <img src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" />
+                </div> 
+                <div class="carousel-item h-full">
+                  <img src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" />
+                </div> 
+                <div class="carousel-item h-full">
+                  <img src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" />
+                </div> 
+                <div class="carousel-item h-full">
+                  <img src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" />
+                </div>
+              </div>
+                
+            <!-- 	The right column should be a short blurb about yourself -->
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <div class="card-body">
+                    <div class="card-actions justify-end">
+                    </div>
+                    <p>                    
+                        Student Name: Jarvinia Zhao <br>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+

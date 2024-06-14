@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
+    <title>Lego Collection</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body>
+    <!-- a responsive navbar  -->
+    <nav>
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-xl">LEGO Collection</a>
+            </div>
+            <div class="flex-none">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li>
+                  <details>
+                    <summary>
+                      Theme
+                    </summary>
+                    <ul class="p-2 bg-base-100 rounded-t-none">
+                        <li><a href="/lego/sets?theme=technic">Technic</a></li>
+                        <li><a href="/lego/sets?theme=classic%20town">Classic Town</a></li>
+                        <li><a href="/lego/sets?theme=supplemental">Supplemental</a></li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br/>
+
+    <div class="container mx-auto">
+        <!-- o	A "hero" daisyUI component featuring some text inviting users to explore the Lego collection and a link styled as a "btn" that links to "/lego/sets" -->
+        <div class="hero h-dvh bg-base-200">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Welcome to the LEGO world!</h1>
+                <p class="py-6">Embark on a journey of creativity and innovation with our extensive Lego collection. Each set is a gateway to a world of imagination, offering endless possibilities for building and play. Whether you're a seasoned builder or just starting out, there's something for everyone in our diverse range. Dive in and start exploring today!</p>
+                <a href="/lego/sets"><button class="btn btn-primary">Get Started</button></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- o	A responsive grid system containing 3 columns -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                  <img class="w-full" src="https://cdn.rebrickable.com/media/sets/001-1.jpg" alt="Gears Lego Set" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Gears</h2>
+                  <p>This set was released in America (USA/CAN) by Samsonite in 1965. It was re-released in 1969 as an educational set (322-4). It was never released in Europe.</p>
+                  <div class="card-actions justify-end">
+                    <a href="/lego/sets/001-1"><button class="btn btn-primary">View</button></a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                  <img class="w-full" src="https://cdn.rebrickable.com/media/sets/010-2.jpg" alt="Pre-School Lego Set" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Pre-School Set</h2>
+                  <p>Introduced in the year 1973, this Lego set is composed of 18 distinct pieces, providing a stimulating and imaginative assembly experience</p>
+                  <div class="card-actions justify-end">
+                    <a href="/lego/sets/010-2"><button class="btn btn-primary">View</button></a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card bg-base-100 shadow-xl">
+                <figure>
+                  <img class="w-full" src="https://cdn.rebrickable.com/media/sets/0241187567-1.jpg" alt="Ninjago: Build Your Own Adventure Lego Set" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Ninjago: Build Your Own Adventure</h2>
+                  <p>Unveiled in 2015, this Lego set boasts a collection of 74 unique pieces, offering an engaging and creative building experience. </p>
+                  <div class="card-actions justify-end">
+                    <a href="/lego/sets/0241187567-1"><button class="btn btn-primary">View</button></a>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
